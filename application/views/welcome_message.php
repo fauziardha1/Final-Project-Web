@@ -107,7 +107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </nav>
 
 <div id="container">
-	<h1>Welcome to Asu kon Cok!</h1>
+	<h1>Welcome to Our TokoPakaian!</h1>
 
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
