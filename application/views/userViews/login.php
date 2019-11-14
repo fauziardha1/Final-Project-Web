@@ -7,10 +7,10 @@
 	<?php $this->load->view("userViews/partials/navbar.php") ?>
     <div class = "main">
 	   <section class="sign-in">
-            <div class="container">
+            <div class="containerlogin">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="img/signin-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="<?php echo base_url('img/signin-image.jpg') ?>" alt="sign up image"></figure>
                         <a href="register" class="signup-image-link">Create an account</a>
                     </div>
 
@@ -33,14 +33,6 @@
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                             </div>
                         </form>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

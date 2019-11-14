@@ -7,7 +7,7 @@
 	<?php $this->load->view("userViews/partials/navbar.php") ?>
     <div class="main">
 	   <section class="signup">
-            <div class="container">
+            <div class="containerlogin">
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
@@ -38,7 +38,7 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="img/signup-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="<?php echo base_url('img/signup-image.jpg" alt="log in image') ?>"></figure>
                         <a href="login" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
