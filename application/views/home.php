@@ -6,11 +6,12 @@
 </head>
 <body>
 
-<?php $this->load->view("userViews/womenFashion/partials/navbar.php") ?>
-
-<?php $this->load->view("userViews/womenFashion/partials/carousel.php") ?>
-
-<?php $this->load->view("userViews/womenFashion/partials/categories.php") ?>
+<?php $this->load->view("partials/navbar.php") ?>
+<div class="container">
+	<?php $this->load->view("partials/carousel.php") ?>
+	<?php $this->load->view($konten) ?>
+	<?php $this->load->view("partials/footer.php") ?>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
