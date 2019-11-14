@@ -30,6 +30,14 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <ul class="tools-box" >
+       <li class="nav-item active">
+        <a class="nav-li\nk" href="http://localhost/Final-Project-Web/index.php/welcome/mybag"><img  src="img/bag.png"> <span class="sr-only">(current)</span>
+            <i class="fas fa-bell fa-fw"></i>
+            <span class="badge badge-danger">1</span>
+            </a>
+      </li>
+    </ul>
     <button class="btn btn-outline-success my-2 my-sm-0"><a href="<?php echo base_url('index.php/login') ?>">Masuk</a></button>
   </div>
 </nav>
