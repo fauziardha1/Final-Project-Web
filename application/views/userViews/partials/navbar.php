@@ -30,6 +30,6 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-    <button class="btn btn-outline-success my-2 my-sm-0"><a href="index.php/login">Masuk</a></button>
+    <button class="btn btn-outline-success my-2 my-sm-0"><a href="<?php echo base_url('index.php/login') ?>">Masuk</a></button>
   </div>
 </nav>
