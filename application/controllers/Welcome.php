@@ -20,15 +20,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('userViews/main');
+		$this->load->view('userViews/womenFashion/main.php');
 	}
-	public function register()
+
+	public function mybag()
 	{
-		$this->load->view('userViews/register.php');
-	}
-	public function login()
-	{
-		$this->load->view('userViews/login.php');
+		$this->load->view('userViews/womenFashion/partials/mybag.php');
 	}
 
 }
