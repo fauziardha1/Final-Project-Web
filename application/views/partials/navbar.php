@@ -26,10 +26,22 @@
       </li>
     </ul>
 
+    <ul class="form-inline my-2 my-lg-0 mr-3" >
+     <li class="nav-item active">
+      <a class="nav-li\nk" href="">
+        <img  src="<?php echo base_url()?>img/cart/bag.png"> 
+        <span class="sr-only">(current)</span>
+        <i class="fas fa-bell fa-fw"></i>
+        <span class="badge badge-danger">21</span>
+      </a>
+      </li>
+    </ul>
+
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <button class="btn btn-outline-success my-2 my-sm-0 ml-3"><a href="<?php echo base_url('index.php/login') ?>"  style="color: white; text-decoration: none;">Masuk</a></button>
     
   </div>
 </nav>

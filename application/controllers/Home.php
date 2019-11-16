@@ -34,4 +34,14 @@ class home extends CI_Controller {
 		$this->load->view("home", $data);
 	}
 
+	public function login()
+	{
+		$this->load->view("login");	
+	}
+
+	public function register()
+	{
+		$this->load->view("register");	
+	}
+
 }

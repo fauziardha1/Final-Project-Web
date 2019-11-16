@@ -5,7 +5,11 @@
 </head>
 <body>
 
-<?php $this->load->view("partials/navbar.php") ?>
+
+<div>
+	<?php $this->load->view("partials/navbar.php") ?>	
+</div>
+<p></p>
 <div class="container">
 	<?php $this->load->view("partials/carousel.php") ?>
 	<?php $this->load->view($konten) ?>

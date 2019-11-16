@@ -57,4 +57,7 @@ $route['man'] = 'home/man';
 $route['women'] = 'home/women';
 $route['child'] = 'home/child';
 
+$route['login'] = 'home/login';
+$route['register'] = 'home/register';
+
 $route['admin'] = 'admin';
