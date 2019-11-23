@@ -7,21 +7,21 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item <?php echo $this->uri->segment(1) == '' ? 'active' : '' ?> <?php echo $this->uri->segment(1) == 'women' ? 'active' : '' ?>" >
-        <a class="nav-link" href="<?php echo base_url() ?>index.php/women">Wanita <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?php echo base_url('women') ?>">Wanita <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item <?php echo $this->uri->segment(1) == 'man' ? 'active' : '' ?>">
-        <a class="nav-link" href="<?php echo base_url() ?>index.php/man">Pria</a>
+        <a class="nav-link" href="<?php echo base_url('man') ?>">Pria</a>
       </li>
       <li class="nav-item <?php echo $this->uri->segment(1) == 'child' ? 'active' : '' ?> dropdown">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url() ?>index.php/child" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="<?php echo base_url('child') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Anak-anak
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo base_url() ?>index.php/child">< 6 tahun</a>
+          <a class="dropdown-item" href="<?php echo base_url('child') ?>">< 6 tahun</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url() ?>index.php/child">6 tahun - 15 tahun</a>
+          <a class="dropdown-item" href="<?php echo base_url('under-maintenance') ?>">6 tahun - 15 tahun</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url() ?>index.php/child">> 15 tahun</a>
+          <a class="dropdown-item" href="<?php echo base_url('under-maintenance') ?>">> 15 tahun</a>
         </div>
       </li>
     </ul>
@@ -41,7 +41,7 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-    <button class="btn btn-outline-success my-2 my-sm-0 ml-3"><a href="<?php echo base_url('index.php/login') ?>"  style="color: white; text-decoration: none;">Masuk</a></button>
+    <button class="btn btn-outline-success my-2 my-sm-0 ml-3"><a href="<?php echo base_url('login') ?>"  style="color: white; text-decoration: none;">Masuk</a></button>
     
   </div>
 </nav>

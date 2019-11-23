@@ -45,4 +45,9 @@ class home extends CI_Controller {
 	}
 
 
+	public function underMaintenance() 
+	{
+		$this->load->view("errors/maintenance");
+	}
+
 }
