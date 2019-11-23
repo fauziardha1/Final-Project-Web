@@ -8,6 +8,19 @@
     <div class = "main">
 	   <section class="sign-in">
             <div class="containerlogin">
+
+                <!-- jika terjadi error saat prosess login maka tampilkan pesan kesalahan -->
+                <?php if (isset($error)) : ?>
+                <?php if ($error === true) : ?>
+
+                    <div class="alert alert-danger" role="alert">
+                        Username atau Password yang Anda Masukkan Salah!!
+                    </div>
+                <?php endif ?>
+                <?php endif ?>
+                <!-- akhir pesan kesalahan -->
+
+
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="<?php echo base_url('img/loginRegister/signin-image.jpg') ?>" alt="sign up image"></figure>
@@ -16,7 +29,7 @@
 
                     <div class="signin-form">
                         <h2 class="form-title">Login</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        <form method="POST" action="<?php echo base_url("login/action_login")?>" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
