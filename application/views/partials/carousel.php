@@ -9,21 +9,27 @@
 
       <?php if ($this->uri->segment(1) == ''): ?>
         <div class="carousel-item active">
-          <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('women') ?>">
+            <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Women's Fshion</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('man') ?>">
+            <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5 >Men's Fshion</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('child') ?>">
+            <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -32,21 +38,27 @@
   
       <?php elseif($this->uri->segment(1) == 'women'): ?>
         <div class="carousel-item active">
-          <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('women') ?>">
+            <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Women's Fshion</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('man') ?>">
+            <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5 >Men's Fshion</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('child') ?>">
+            <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('child') ?>">
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -55,21 +67,27 @@
 
       <?php elseif($this->uri->segment(1) == 'man'): ?>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('women') ?>">
+            <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Women's Fshion</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item active">
-          <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('man') ?>">
+            <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5 >Men's Fshion</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('child') ?>">
+            <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -78,21 +96,27 @@
 
       <?php elseif($this->uri->segment(1) == 'child'): ?>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('women') ?>">
+            <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Women's Fshion</h5>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('man') ?>">
+            <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5 >Men's Fshion</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="carousel-item active">
-          <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          <a class="nav-link" href="<?php echo base_url('child') ?>">
+            <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

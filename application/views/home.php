@@ -2,6 +2,7 @@
 <html>
 <head>
 	<?php $this->load->view("partials/header.php") ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/home/home.css')?>">
 </head>
 <body>
 
