@@ -11,7 +11,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form">
+                        <form method="POST" action="<?= base_url('register/action_register') ?>" class="register-form" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="username" id="name" placeholder="Username"/>
@@ -22,11 +22,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password1" name="pass" id="pass" placeholder="Password"/>
+                                <input type="password" name="pass1" id="pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password2" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                                <input type="password" name="pass2" id="re_pass" placeholder="Repeat your password"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />

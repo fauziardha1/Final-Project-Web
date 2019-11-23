@@ -24,7 +24,7 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="<?php echo base_url('img/loginRegister/signin-image.jpg') ?>" alt="sign up image"></figure>
-                        <a href="register" class="signup-image-link">Create an account</a>
+                        <a href="<?= base_url('register') ?>" class="signup-image-link">Create an account</a>
                     </div>
 
                     <div class="signin-form">
