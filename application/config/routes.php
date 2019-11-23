@@ -62,4 +62,8 @@ $route['register'] = 'register';    // register diarahkan ke controller register
 
 $route['under-maintenance'] = 'home/underMaintenance';
 
+$route['cart'] = 'cart';
+
+
 $route['admin'] = 'admin';
+
