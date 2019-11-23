@@ -55,7 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['man'] = 'home/man';
 $route['women'] = 'home/women';
-$route['child'] = 'home/child';
+$route['child'] = 'home/child'; 
 
 $route['login'] = 'login';          // login diarahkan ke controller login 
 $route['register'] = 'register';    // register diarahkan ke controller register
@@ -64,6 +64,7 @@ $route['under-maintenance'] = 'home/underMaintenance';
 
 $route['cart'] = 'cart';
 
+$route['detail-product'] = 'product';
 
 $route['admin'] = 'admin';
 

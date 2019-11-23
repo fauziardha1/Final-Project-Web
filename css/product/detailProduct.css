@@ -1,0 +1,36 @@
+#generalContent {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#gambarProduk img {
+	width: 400px;
+	max-height: 700px;
+}
+
+#ukuranSepatu div {
+	float: left;
+	margin: 5px;
+	cursor: pointer;
+}
+
+#ukuranSepatu div:hover {
+	background-color: #18ab27;
+	color: white;
+}
+
+#buy-or-addToCart {
+	text-align: center;
+}
+
+
+#deskripsiContent {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+#spesifikasiContent {
+	width: 80%;
+	margin: 0 auto;
+}
