@@ -57,7 +57,7 @@ $route['man'] = 'home/man';
 $route['women'] = 'home/women';
 $route['child'] = 'home/child';
 
-$route['login'] = 'home/login';
-$route['register'] = 'home/register';
+$route['login'] = 'login';          // login diarahkan ke controller login 
+$route['register'] = 'register';    // register diarahkan ke controller register
 
 $route['admin'] = 'admin';
