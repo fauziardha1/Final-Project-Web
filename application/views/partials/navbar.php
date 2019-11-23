@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="<?php echo base_url() ?>">ZALORA</a>
+  <a class="navbar-brand" href="<?php echo base_url() ?>"><i>FashionID</i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,17 +19,17 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?php echo base_url('child') ?>">< 6 tahun</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('child') ?>">6 tahun - 15 tahun</a>
+          <a class="dropdown-item" href="<?php echo base_url('under-maintenance') ?>">6 tahun - 15 tahun</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('child') ?>">> 15 tahun</a>
+          <a class="dropdown-item" href="<?php echo base_url('under-maintenance') ?>">> 15 tahun</a>
         </div>
       </li>
     </ul>
 
     <ul class="form-inline my-2 my-lg-0 mr-3" >
      <li class="nav-item active">
-      <a class="nav-li\nk" href="">
-        <img  src="<?php echo base_url('img/cart/bag.png')?>"> 
+      <a class="nav-li\nk" href="<?php echo base_url() ?>index.php/cart">
+        <img  src="<?php echo base_url()?>img/cart/bag.png"> 
         <span class="sr-only">(current)</span>
         <i class="fas fa-bell fa-fw"></i>
         <span class="badge badge-danger">21</span>

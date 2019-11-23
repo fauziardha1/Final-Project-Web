@@ -1,0 +1,27 @@
+#wanita a {
+	text-decoration: none;
+	color: black;
+}
+
+#wanita a:hover {
+	color: #962495;
+}
+
+#pria a {
+	text-decoration: none;
+	color: black;
+}
+
+#pria a:hover {
+	color: #05979e;
+}
+
+#anak a {
+	text-decoration: none;
+	color: black;
+}
+
+#anak a:hover {
+	color: #962495;
+}
+
