@@ -60,4 +60,6 @@ $route['child'] = 'home/child';
 $route['login'] = 'login';          // login diarahkan ke controller login 
 $route['register'] = 'register';    // register diarahkan ke controller register
 
+$route['under-maintenance'] = 'home/underMaintenance';
+
 $route['admin'] = 'admin';

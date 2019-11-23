@@ -44,4 +44,9 @@ class home extends CI_Controller {
 		$this->load->view("register");	
 	}
 
+	public function underMaintenance() 
+	{
+		$this->load->view("errors/maintenance");
+	}
+
 }
