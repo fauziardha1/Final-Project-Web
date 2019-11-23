@@ -60,4 +60,8 @@ $route['child'] = 'home/child';
 $route['login'] = 'home/login';
 $route['register'] = 'home/register';
 
+$route['cart'] = 'cart';
+
+
 $route['admin'] = 'admin';
+
