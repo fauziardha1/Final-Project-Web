@@ -39,10 +39,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <div class="cell p-checkbox cke-box cked">
-                    <span class="cke" id="skuUuId_508319154_1_0"></span>
-                    <span class="line-circle"></span>
-                  </div>
+                  
                   <th scope="row" class="border-0">
                     <div class="p-2">
                       <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
