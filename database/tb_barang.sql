@@ -49,7 +49,22 @@ INSERT INTO `tb_barang` (`id_brg`, `nama_brg`, `keterangan`, `kategori`, `sub_ka
 (3, 'Jaket Hitam', 'Jaket ini cocok untuk acara informal', 'Pria', 'Jaket', 329000, 26, 'jaket-1.jpg'),
 (4, 'Jam Tangan Iluminator', 'Jam tangan ini tahan air', 'Pria', 'Jam', 190000, 10, 'jam-tangan-1.jpg'),
 (5, 'Sepatu Casual Krim', 'Sepatu ini cocok untuk hangout', 'Pria', 'Sepatu', 320000, 40, 'sepatu-1.jpg'),
-(6, 'Topi Hypebest', 'Melindungi kepala dari sinar matahari', 'Pria', 'Topi', 76000, 50, 'topi-1.jpg');
+(6, 'Topi Hypebest', 'Melindungi kepala dari sinar matahari', 'Pria', 'Topi', 76000, 50, 'topi-1.jpg'),
+
+(7, 'Baju Bergaris', 'Cocok untuk pergi ke Mall', 'Wanita', 'Baju', 76000, 50, 'baju-1.jpg'),
+(8, 'Celana Katun', 'Nyaman Digunakan', 'Wanita', 'Celana', 76000, 50, 'celana-1.jpg'),
+(9, 'Jaket Denim', 'Cocok untuk berkumpul bersama teman', 'Wanita', 'Jaket', 76000, 50, 'jaket-1.jpg'),
+(10, 'Jam Luxury', 'Terlihat Mewah dan elegan', 'Wanita', 'Jam', 76000, 50, 'jam-1.jpg'),
+(11, 'Sepatu Cats', 'Cocok untuk bepergian', 'Wanita', 'Sepatu', 76000, 50, 'sepatu-1.jpg'),
+(12, 'Topi Merah', 'Melindungi kepala dari sinar matahari', 'Wanita', 'Topi', 76000, 50, 'topi-1.jpg'),
+
+(13, 'Baju Pink musim dingin', 'Terbuat dari katun', 'Anak', 'Baju', 76000, 50, 'baju-1.jpg'),
+(14, 'Celana Jeans Mini', 'Nyaman Digunakan', 'Anak', 'Celana', 76000, 50, 'celana-1.jpg'),
+(15, 'Jaket Tahan Air', 'Melindungi anak saat cuaca cerah dan hujan', 'Anak', 'Jaket', 76000, 50, 'jaket-1.jpg'),
+(16, 'Jam Colorful', 'Jam ini awet', 'Anak', 'Jam', 76000, 50, 'jam-1.jpg'),
+(17, 'Sepatu Cats Anak', 'Nyaman diapakai dan barang tidak mudah rusak', 'Anak', 'Sepatu', 76000, 50, 'sepatu-1.jpg'),
+(18, 'Topi Coklat', 'Melindungi kepala dari sinar matahari', 'Anak', 'Topi', 76000, 50, 'topi-1.jpg');
+
 
 --
 -- Indexes for dumped tables
