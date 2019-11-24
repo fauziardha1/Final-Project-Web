@@ -10,5 +10,12 @@
             return $query->row_array();
 
         }
+
+        public function add_new_user($data)
+        {
+            $this->db->insert('user',$data);
+
+            return $this->db->affected_rows('user');
+        }
     }
 ?>

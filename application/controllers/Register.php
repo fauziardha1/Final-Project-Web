@@ -22,8 +22,8 @@
             //ambil data yang dilemparkan melalui method post
             $newUsername = $this->input->post('username');
             $newEmail    = $this->input->post('email');
-            $pass1       = $this->input->post('password1');
-            $pass2       = $this->input->post('password2');
+            $pass1       = $this->input->post('pass1');
+            $pass2       = $this->input->post('pass2');
 
             //cek apakah pass1 dan pass2 sudah sama, jika sudah maka lanjutkan jika belum tampilkan pesan kesalahan
 
@@ -34,6 +34,7 @@
             // jika sudah maka tampilkan halaman register dengan pesan kesalahan
             if (!empty($isDataExist)) {
                 $this->error = true;
+                echo "<script> alert('Data Gagal yang Anda Masukkan Sudah dipakai orang lain!'); </script>";
                 $this->index();
             } else{
             // jika belum maka lakukan insert data
@@ -43,7 +44,18 @@
                     'email'    => $newEmail
                 );
 
-                $this->db->insert('user', $newAccount);
+                $statusInsert =  $this->user->add_new_user($newAccount); // insert data melalui model dan  cek status apakah berhasil ditambahkan atau tidak
+
+                // jika berhaasil maka tampilkan halaman login
+                if($statusInsert > 0)
+                    redirect(base_url('login'),'refresh');
+                else {
+                // jika tidak maka tampilkan pesan kesalahan dan kembalikan ke halaman register
+                    echo "<script> alert('Data Gagal ditambahkan'); </script>";
+                    
+                    redirect(base_url('register'),'refresh');
+                                        
+                }
                 
             }
         }
