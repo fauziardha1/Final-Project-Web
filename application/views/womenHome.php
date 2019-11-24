@@ -2,15 +2,15 @@
 	<h2 class="mt-5 mb-4" style="text-align: center;">Women's Fashion Categories</h2>
 	<div class="row">
 		<div class="card mb-3 mr-3" style="max-width: 540px;">
-		  <div class="row no-gutters" id="jam-tangan-wanita">
+		  <div class="row no-gutters" id="jam-wanita">
 		    <div class="col-md-4">
-		      <a href="<?php echo base_url('jam-tangan-wanita')?>">
+		      <a href="<?php echo base_url('jam-wanita')?>">
 		      	<img src="<?php echo base_url()?>img/womenFahshion/1.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
 		      <div class="card-body">
-		        <a href="<?php echo base_url('jam-tangan-wanita')?>"><h5 class="card-title">Jam Tangan</h5></a>
+		        <a href="<?php echo base_url('jam-wanita')?>"><h5 class="card-title">Jam Tangan</h5></a>
 		        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 		        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		      </div>

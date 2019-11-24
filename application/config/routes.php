@@ -68,3 +68,24 @@ $route['detail-product'] 		= 'product';
 
 $route['admin'] 				= 'admin';
 
+
+$route['baju-pria'] 			= 'kategori/baju_pria';
+$route['celana-pria'] 			= 'kategori/celana_pria';
+$route['jaket-pria'] 			= 'kategori/jaket_pria';
+$route['topi-pria'] 			= 'kategori/topi_pria';
+$route['sepatu-pria'] 			= 'kategori/sepatu_pria';
+$route['jam-pria'] 			= 'kategori/jam_pria';
+
+$route['baju-wanita'] 			= 'kategori/baju_wanita';
+$route['celana-wanita'] 			= 'kategori/celana_wanita';
+$route['jaket-wanita'] 			= 'kategori/jaket_wanita';
+$route['topi-wanita'] 			= 'kategori/topi_wanita';
+$route['sepatu-wanita'] 			= 'kategori/sepatu_wanita';
+$route['jam-wanita'] 			= 'kategori/jam_wanita';
+
+$route['baju-anak'] 			= 'kategori/baju_anak';
+$route['celana-anak'] 			= 'kategori/celana_anak';
+$route['jaket-anak'] 			= 'kategori/jaket_anak';
+$route['topi-anak'] 			= 'kategori/topi_anak';
+$route['sepatu-anak'] 			= 'kategori/sepatu_anak';
+$route['jam-anak'] 			= 'kategori/jam_anak';
