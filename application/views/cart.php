@@ -24,13 +24,13 @@
               <thead>
                 <tr>
                   <th scope="col" class="border-0 bg-light">
-                    <div class="p-2 px-3 text-uppercase">Product</div>
+                    <div class="p-2 px-3 text-uppercase">Barang</div>
                   </th>
                   <th scope="col" class="border-0 bg-light">
-                    <div class="py-2 text-uppercase">Price</div>
+                    <div class="py-2 text-uppercase">Harga</div>
                   </th>
                   <th scope="col" class="border-0 bg-light">
-                    <div class="py-2 text-uppercase">Quantity</div>
+                    <div class="py-2 text-uppercase">Jumlah</div>
                   </th>
                   <th scope="col" class="border-0 bg-light">
                     <div class="py-2 text-uppercase">Subtotal</div>
@@ -51,7 +51,7 @@
                       </div>
                     </div>
                   </th>
-                  <td class="border-0 align-middle"><strong>$79.00</strong></td>
+                  <td class="border-0 align-middle">$<strong id="productPrice">79.00</strong></td>
 
                  <td class="border-0 align-middle" id="number">
                       <span class="minus"> <strong class="v-middle">-</strong></span>
@@ -63,7 +63,7 @@
 
                   <td class="border-0 align-middle">
                    <span class="spacer"></span>
-                    <strong class="v-middle">0</strong>
+                    <strong class="v-middle" id="subTotal">0</strong>
                   </td>
                   <td class="align-middle"><div class="cell p-ops">
                   
@@ -128,8 +128,21 @@
                 </div>
                   </td>
                 </tr>
-              </tbody>
+
+              </tbody> 
             </table>
+                  <div class="checkout">
+                    
+                        <div class="printTot"> <em>Total(3&nbsp;pieces)</em> </div>
+                        <div class="sum"> <strong >Rp 51,800</strong> </div>
+                          
+                        <div class="sum">
+                           
+                           <button class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase"><a href="<?php echo base_url('checkout') ?>"  style="color: white; text-decoration: none;">Checkout</a></button>
+                         </div>
+                        </div>
+                    </div>
+                  </div>
           </div>
           <!-- End -->
         </div>
