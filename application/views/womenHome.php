@@ -5,7 +5,7 @@
 		  <div class="row no-gutters" id="jam-wanita">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('jam-wanita')?>">
-		      	<img src="<?php echo base_url()?>img/womenFashion/1.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Wanita/1.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -22,7 +22,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('sepatu-wanita')?>">
-		      	<img src="<?php echo base_url()?>img/womenFashion/2.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Wanita/2.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -40,7 +40,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('jaket-wanita')?>">
-		      	<img src="<?php echo base_url()?>img/womenFashion/4.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Wanita/4.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -57,7 +57,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('celana-wanita')?>">
-		      	<img src="<?php echo base_url()?>img/womenFashion/3.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Wanita/3.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -75,7 +75,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('topi-wanita')?>">
-		      	<img src="<?php echo base_url()?>img/womenFashion/6.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Wanita/6.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -92,7 +92,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('baju-wanita')?>">
-		      	<img src="<?php echo base_url()?>img/womenFashion/5.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Wanita/5.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
