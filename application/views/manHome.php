@@ -5,7 +5,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('jaket-pria')?>">
-		      	<img src="<?php echo base_url()?>img/menFashion/1.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Pria/1.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -22,7 +22,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('sepatu-pria')?>">
-		      	<img src="<?php echo base_url()?>img/menFashion/2.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Pria/2.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -40,7 +40,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('jam-pria')?>">
-		      	<img src="<?php echo base_url()?>img/menFashion/4.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Pria/4.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -57,7 +57,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('baju-pria')?>">
-		      	<img src="<?php echo base_url()?>img/menFashion/3.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Pria/3.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -75,7 +75,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('topi-pria')?>">
-		      	<img src="<?php echo base_url()?>img/menFashion/6.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Pria/6.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -92,7 +92,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('celana-pria')?>">
-		      	<img src="<?php echo base_url()?>img/menFashion/5.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Pria/5.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
