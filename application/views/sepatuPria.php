@@ -7,7 +7,7 @@
 				    <h5 class="card-title mb-2"><?php echo $brg->nama_brg ?></h5>
 				    <small><?php echo $brg->keterangan ?></small> <br>
 				    <span class='badge badge-pill badge success mb-3'><?php echo "Harga : Rp ".$brg->harga ?></span> <br>
-				    <a href="#" class="btn btn-sm btn-success">Lihat Detail</a>
+				    <a href="<?php echo base_url('detail-product')?>" class="btn btn-sm btn-success">Lihat Detail</a>
 				  </div>
 				</div>
 			<?php endforeach; ?>
