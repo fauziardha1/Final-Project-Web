@@ -7,6 +7,7 @@ class Cart extends CI_Controller {
 	public function __construct()
     {
 		parent::__construct();
+		$this->load->model('Model_product');
 	}
 	
 	
@@ -16,10 +17,11 @@ class Cart extends CI_Controller {
 		$this->load->view("cart");
 	}
 
-	public function cart()
+	public function cart($id)
 	{
 		// $data['konten'] = 'cart';
-		$this->load->view("cart");
+		$data['produk'] = $this->Model_product->data_product($id);
+		$this->load->view("cart", $data);
 	}
 
 }

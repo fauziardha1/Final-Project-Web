@@ -29,8 +29,23 @@
 	margin: 0 auto;
 }
 
+#deskripsiContent h4 {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#deskripsiContent p {
+	text-align: justify;
+}
 
 #spesifikasiContent {
 	width: 80%;
+	margin: 0 auto;
+}
+
+#spesifikasiContent h4 {
+	width: 70%;
+	text-align: center;
 	margin: 0 auto;
 }

@@ -4,7 +4,7 @@
 		<div class="card mb-3 mr-3" style="max-width: 540px;">
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
-		      <a href="<?php echo base_url('jaket-pria')?>">
+		      <a href="">
 		      	<img src="<?php echo base_url()?>img/Pria/1.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
