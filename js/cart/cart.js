@@ -14,3 +14,15 @@ $(document).ready(function() {
 				return false;
 			});
 		});
+
+
+const hargaBarang = document.getElementsByClassName('hargaBarang');
+const banyakBarang = document.getElementsByClassName('banyakBarang');
+const subTotal = document.getElementsByClassName('subTotal');
+const totalBayar = document.getElementsByClassName('totalBayar');
+
+for ( let i = 0; i < banyakBarang.length; i++) {
+	subTotal[i].innerText = hargaBarang[i].innerText*banyakBarang[i].innerText;
+	console.log(subTotal[i].innerText);
+}
+

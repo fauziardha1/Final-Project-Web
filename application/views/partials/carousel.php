@@ -7,9 +7,9 @@
     </ol>
     <div class="carousel-inner">
 
-      <?php if ($this->uri->segment(1) == ''): ?>
+      <?php if ($this->uri->segment(2) == ''): ?>
         <div class="carousel-item active">
-          <a class="nav-link" href="<?php echo base_url('women') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/women') ?>">
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('man') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/man') ?>">
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('child') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/child') ?>">
             <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -36,9 +36,9 @@
           </div>
         </div>
   
-      <?php elseif($this->uri->segment(1) == 'women'): ?>
+      <?php elseif($this->uri->segment(2) == 'women'): ?>
         <div class="carousel-item active">
-          <a class="nav-link" href="<?php echo base_url('women') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/women') ?>">
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('man') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/man') ?>">
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -56,18 +56,17 @@
           </div>
         </div>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('child') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/child') ?>">
             <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
-          <a class="nav-link" href="<?php echo base_url('child') ?>">
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
           </div>
         </div>  
 
-      <?php elseif($this->uri->segment(1) == 'man'): ?>
+      <?php elseif($this->uri->segment(2) == 'man'): ?>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('women') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/women') ?>">
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -76,7 +75,7 @@
           </div>
         </div>
         <div class="carousel-item active">
-          <a class="nav-link" href="<?php echo base_url('man') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/man') ?>">
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -85,7 +84,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('child') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/child') ?>">
             <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -94,9 +93,9 @@
           </div>
         </div>
 
-      <?php elseif($this->uri->segment(1) == 'child'): ?>
+      <?php elseif($this->uri->segment(2) == 'child'): ?>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('women') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/women') ?>">
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -105,7 +104,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <a class="nav-link" href="<?php echo base_url('man') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/man') ?>">
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
@@ -114,7 +113,7 @@
           </div>
         </div>
         <div class="carousel-item active">
-          <a class="nav-link" href="<?php echo base_url('child') ?>">
+          <a class="nav-link" href="<?php echo base_url('home/child') ?>">
             <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">

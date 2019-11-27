@@ -53,39 +53,33 @@ $route['default_controller']    = 'home';
 $route['404_override']          = '';
 $route['translate_uri_dashes']  = FALSE;
 
-$route['man']                   = 'home/man';
-$route['women']                 = 'home/women';
-$route['child']                 = 'home/child';
-
 $route['login']                 = 'login';          // login diarahkan ke controller login 
 $route['register']              = 'register';    // register diarahkan ke controller register
 
 $route['under-maintenance'] 	= 'home/underMaintenance';
-
-$route['cart'] 					= 'cart';
 
 $route['detail-product'] 		= 'product';
 
 $route['admin'] 				= 'admin';
 
 
-$route['baju-pria'] 			= 'kategori/baju_pria';
-$route['celana-pria'] 			= 'kategori/celana_pria';
-$route['jaket-pria'] 			= 'kategori/jaket_pria';
-$route['topi-pria'] 			= 'kategori/topi_pria';
-$route['sepatu-pria'] 			= 'kategori/sepatu_pria';
-$route['jam-pria'] 			= 'kategori/jam_pria';
+$route['home/man/baju'] 			= 'kategori/baju_pria';
+$route['home/man/celana'] 			= 'kategori/celana_pria';
+$route['home/man/jaket'] 			= 'kategori/jaket_pria';
+$route['home/man/topi'] 			= 'kategori/topi_pria';
+$route['home/man/sepatu'] 			= 'kategori/sepatu_pria';
+$route['home/man/jam'] 			= 'kategori/jam_pria';
 
-$route['baju-wanita'] 			= 'kategori/baju_wanita';
-$route['celana-wanita'] 			= 'kategori/celana_wanita';
-$route['jaket-wanita'] 			= 'kategori/jaket_wanita';
-$route['topi-wanita'] 			= 'kategori/topi_wanita';
-$route['sepatu-wanita'] 			= 'kategori/sepatu_wanita';
-$route['jam-wanita'] 			= 'kategori/jam_wanita';
+$route['home/women/baju'] 			= 'kategori/baju_wanita';
+$route['home/women/celana'] 			= 'kategori/celana_wanita';
+$route['home/women/jaket'] 			= 'kategori/jaket_wanita';
+$route['home/women/topi'] 			= 'kategori/topi_wanita';
+$route['home/women/sepatu'] 			= 'kategori/sepatu_wanita';
+$route['home/women/jam'] 			= 'kategori/jam_wanita';
 
-$route['baju-anak'] 			= 'kategori/baju_anak';
-$route['celana-anak'] 			= 'kategori/celana_anak';
-$route['jaket-anak'] 			= 'kategori/jaket_anak';
-$route['topi-anak'] 			= 'kategori/topi_anak';
-$route['sepatu-anak'] 			= 'kategori/sepatu_anak';
-$route['jam-anak'] 			= 'kategori/jam_anak';
+$route['home/child/baju'] 			= 'kategori/baju_anak';
+$route['home/child/celana'] 			= 'kategori/celana_anak';
+$route['home/child/jaket'] 			= 'kategori/jaket_anak';
+$route['home/child/topi'] 			= 'kategori/topi_anak';
+$route['home/child/sepatu'] 			= 'kategori/sepatu_anak';
+$route['home/child/jam'] 			= 'kategori/jam_anak';

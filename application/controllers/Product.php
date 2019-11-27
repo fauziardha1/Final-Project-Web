@@ -15,14 +15,14 @@ class Product extends CI_Controller {
 	public function index()
 	{ 
 		$id_brg   = $this->input->post('id');
-		$data['produk'] = $this->Model_product->data_product($id_brg);
+		$data['produk'] = $this->Model_product->get_product($id_brg);
 		$this->load->view("detailProduct", $data);
 	}
 
 	public function details($id)
 	{
 		// $id_brg   = $this->input->post('id');
-		$data['produk'] = $this->Model_product->data_product($id);
+		$data['produk'] = $this->Model_product->get_product($id);
 		$this->load->view("detailProduct", $data);
 	}
 

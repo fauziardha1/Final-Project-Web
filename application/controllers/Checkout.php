@@ -7,14 +7,14 @@ class Checkout extends CI_Controller {
 	public function __construct()
     {
 		parent::__construct();
-		$this->load->model('Model_product');
+		$this->load->model('Model_cart');
 	}
 	
 	
 	public function index()
 	{ 
-		// $data['konten'] = 'cart';
-		$this->load->view("checkout");
+		$data['products'] = $this->Model_cart->get_products();
+		$this->load->view("checkout", $data);
 	}
 
 	public function checkout($id)

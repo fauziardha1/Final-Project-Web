@@ -6,4 +6,4 @@
 <meta name="description" content="Toko Pakaian Online">
 <meta name="author" content="Fauzi Arda Saputra - Nurul Afifah - Marrosandy Bagus Saputra - Dheny Dwi Prakoso">
 
-<title><?php echo ucfirst($this->uri->segment(1)) ." - ". SITE_NAME?></title>
+<title><?php echo ucfirst($this->uri->segment(2)) ." - ". SITE_NAME?></title>

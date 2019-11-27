@@ -3,8 +3,6 @@
 <head>
   <?php $this->load->view("partials/header.php") ?>
   <link rel="stylesheet" href="<?php echo base_url('css/cart/cart.css')?>">
-
-  
 </head>
 <body>
 
@@ -38,100 +36,46 @@
                 </tr>
               </thead>
               <tbody>
+                <?php $jumlahBarang = 0; ?>
+                <?php foreach ($products as $produk) : ?>
+                  <?php $jumlahBarang = $jumlahBarang+1; ?>
                 <tr>
-                  
-                
                   <th scope="row" class="border-0">
                     <div class="p-2">
-                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                      <img src="<?php echo base_url().'/img/'.$produk->kategori.'/'.$produk->sub_kategori .'/'.$produk->gambar ?>" alt="" width="70" class="img-fluid rounded shadow-sm">
                       <div class="ml-3 d-inline-block align-middle">
-                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle"><?php echo $produk->nama_brg ?></a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: <?php echo $produk->sub_kategori ?></span>
+                        <h5 class="mb-0">
+                          <a href="<?php echo base_url()?>product/details/<?php echo $produk->id_brg ?>" class="text-dark d-inline-block align-middle" style="text-decoration:none; display: block; width: 400px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"><?php echo $produk->nama_brg ?></a>
+                        </h5>
+                        <span class="text-muted font-weight-normal font-italic d-block">Category: <?php echo $produk->sub_kategori ?></span>
                       </div>
                     </div>
                   </th>
-                  <td class="border-0 align-middle">Rp <?php echo $produk->harga ?></td>
+                  <td class="border-0 align-middle">Rp <i class="hargaBarang"><?php echo $produk->harga ?></i></td>
                   <td class="border-0 align-middle" id="number">
                       <span class="minus"> <strong class="v-middle">-</strong></span>
-                        <input type="text" value="1"/>
+                        <input type="text" value="1" class="banyakBarang" />
                        <span class="plus">
                         <strong class="v-middle">+</strong>
                       </span>
                   </td>
                   <td class="border-0 align-middle">
                    <span class="spacer"></span>
-                   <strong class="v-middle" id="subTotal">0</strong>
+                   <strong class="v-middle">Rp <i class="subTotal"><?php echo ($produk->harga)?></i></strong>
                   </td>
                   <td class="align-middle">
                     <div class="cell p-ops">
-                      <a href="javascript:;" class="btn-2" clstag="pageclick|keycount|epi_cart_shoppinglist_delete_2016120713|6">Hapus</a>
+                      <a href="<?php echo base_url()?>cart/hapus/<?php echo $produk->id_brg; ?>" class="btn-2">Hapus</a>
                     </div>
                   </td>
-               
-
                 </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="p-2">
-                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-3_cexmhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                      <div class="ml-3 d-inline-block align-middle">
-                        <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Lumix camera lense</a></h5><span class="text-muted font-weight-normal font-italic">Category: Electronics</span>
-                      </div>
-                    </div>
-                  </th>
-                  <td class="align-middle"><strong>$79.00</strong></td>
-                    <td class="border-0 align-middle" id="number">
-                      <span class="minus"> <strong class="v-middle">-</strong></span>
-                        <input type="text" value="1"/>
-                       <span class="plus">
-                        <strong class="v-middle">+</strong>
-                      </span>
-                  </td>
-                  <td class="border-0 align-middle">
-                   <span class="spacer"></span>
-                    <strong class="v-middle">0</strong>
-                  </td>
-
-                  <td class="align-middle"><div class="cell p-ops">
-                  
-                  <a href="javascript:;" class="btn-2" clstag="pageclick|keycount|epi_cart_shoppinglist_delete_2016120713|6">Hapus</a>
-                </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <div class="p-2">
-                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-2_qxjis2.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                      <div class="ml-3 d-inline-block align-middle">
-                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Gray Nike running shoe</a></h5><span class="text-muted font-weight-normal font-italic">Category: Fashion</span>
-                      </div>
-                    </div>
-                    <td class="align-middle"><strong>$79.00</strong></td>
-                     <td class="border-0 align-middle" id="number">
-                      <span class="minus"> <strong class="v-middle">-</strong></span>
-                        <input type="text" value="1"/>
-                       <span class="plus">
-                        <strong class="v-middle">+</strong>
-                      </span>
-                  </td>
-
-                    <td class="border-0 align-middle">
-                   <span class="spacer"></span>
-                    <strong class="v-middle">0</strong>
-                  </td>
-
-                  <td class="align-middle"><div class="cell p-ops">
-                  
-                  <a href="javascript:;" class="btn-2" clstag="pageclick|keycount|epi_cart_shoppinglist_delete_2016120713|6">Hapus</a>
-                </div>
-                  </td>
-                </tr>
-
+                <?php endforeach; ?>
               </tbody> 
             </table>
                   <div class="checkout">
                     
-                        <div class="printTot"> <em>Total(3&nbsp;pieces)</em> </div>
-                        <div class="sum"> <strong >Rp 51,800</strong> </div>
+                        <div class="printTot"> <em>Total(<?php echo $jumlahBarang; ?>&nbsp;pieces)</em> </div>
+                        <div class="sum"> <strong>Rp <i class="totalBayar">51800</i></strong> </div>
                           
                         <div class="sum">
                            

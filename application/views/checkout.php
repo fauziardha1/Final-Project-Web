@@ -11,32 +11,36 @@
 
             <div class="bg-light rounded-pill px-4 py-3  ">Daftar belanja
               <div class=" p-4 bg-white rounded shadow-sm  ">
-               <tr>
-                  <div class="d-flex justify-content-between  class="text-muted font-weight-normal font-italic d-block"">
-                  <th scope="row" class="border-0 ">
-                    <div class="p-2  ">
-                      <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
-                      <div class="ml-3 d-inline-block align-middle ">
-                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                
+                <?php foreach ($products as $produk) : ?>
+                <tr>
+                  <div class="d-flex justify-content-between text-muted font-weight-normal font-italic d-block">
+                    <th scope="row" class="border-0 ">
+                      <div class="p-2  ">
+                        <img src="<?php echo base_url().'/img/'.$produk->kategori.'/'.$produk->sub_kategori .'/'.$produk->gambar ?>" alt="" width="70" class="img-fluid rounded shadow-sm">
+                        <div class="ml-3 d-inline-block align-middle">
+                        <h5 class="mb-0">
+                          <a href="<?php echo base_url()?>product/details/<?php echo $produk->id_brg ?>" class="text-dark d-inline-block align-middle" style="text-decoration:none; display: block; width: 300px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"><?php echo $produk->nama_brg ?></a>
+                        </h5>
+                        <span class="text-muted font-weight-normal font-italic d-block">Category: <?php echo $produk->sub_kategori ?></span>
                       </div>
-                    </div>
-                  </th>
+                      </div>
+                    </th>
                   <div class="d-flex align-items-center">
 
-                  <td>
-                    <span  class="text-muted font-weight-normal d-block" >x2</span>
-                  </td>
+                    <td>
+                      <span  class="text-muted font-weight-normal d-block" >x2</span>
+                    </td>
                   </div>
                   </div>
 
 
-                   <div class=" d-flex justify-content-end">
-
-                  <td class="border-0 align-middle ">$<strong id="productPrice">79.00</strong></td>
+                  <div class=" d-flex justify-content-end">
+                    <td class="border-0 align-middle ">Rp <strong id="productPrice"> <?php echo $produk->harga ?></strong></td>
                     </div>
 
                 </tr>
-
+                <?php endforeach; ?>
                 
               </div>
             </div>

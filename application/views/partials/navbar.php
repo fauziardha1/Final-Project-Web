@@ -6,18 +6,18 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item <?php echo $this->uri->segment(1) == '' ? 'active' : '' ?> <?php echo $this->uri->segment(1) == 'women' ? 'active' : '' ?>" >
-        <a class="nav-link" href="<?php echo base_url('women') ?>">Wanita <span class="sr-only">(current)</span></a>
+      <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active' : '' ?> <?php echo $this->uri->segment(2) == 'women' ? 'active' : '' ?>" >
+        <a class="nav-link" href="<?php echo base_url('home/women') ?>">Wanita <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item <?php echo $this->uri->segment(1) == 'man' ? 'active' : '' ?>">
-        <a class="nav-link" href="<?php echo base_url('man') ?>">Pria</a>
+      <li class="nav-item <?php echo $this->uri->segment(2) == 'man' ? 'active' : '' ?>">
+        <a class="nav-link" href="<?php echo base_url('home/man') ?>">Pria</a>
       </li>
-      <li class="nav-item <?php echo $this->uri->segment(1) == 'child' ? 'active' : '' ?> dropdown">
-        <a class="nav-link dropdown-toggle" href="<?php echo base_url('child') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item <?php echo $this->uri->segment(2) == 'child' ? 'active' : '' ?> dropdown">
+        <a class="nav-link dropdown-toggle" href="<?php echo base_url('home/child') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Anak-anak
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo base_url('child') ?>">< 6 tahun</a>
+          <a class="dropdown-item" href="<?php echo base_url('home/child') ?>">< 6 tahun</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?php echo base_url('under-maintenance') ?>">6 tahun - 15 tahun</a>
           <div class="dropdown-divider"></div>

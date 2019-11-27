@@ -7,20 +7,29 @@ class Cart extends CI_Controller {
 	public function __construct()
     {
 		parent::__construct();
-		$this->load->model('Model_product');
+		$this->load->model('Model_cart');
 	}
 	
 	
 	public function index()
 	{ 
-		// $data['konten'] = 'cart';
-		$this->load->view("cart");
+		$data['products'] = $this->Model_cart->get_products();
+		$this->load->view("cart", $data);
 	}
 
 	public function cart($id)
 	{
-		// $data['konten'] = 'cart';
-		$data['produk'] = $this->Model_product->data_product($id);
+		$this->Model_cart->add_product($id);
+
+		$data['products'] = $this->Model_cart->get_products();
+		$this->load->view("cart", $data);
+	}
+
+	public function hapus($id) 
+	{
+		$this->Model_cart->delete_product($id);
+
+		$data['products'] = $this->Model_cart->get_products();
 		$this->load->view("cart", $data);
 	}
 
