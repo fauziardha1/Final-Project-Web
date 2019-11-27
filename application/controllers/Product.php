@@ -3,20 +3,29 @@
 class Product extends CI_Controller {
 
 	
-	public function __construct()
-    {
-		parent::__construct();
-	}
+	    public function __construct()
+        {
+            parent::__construct();
+            $this->load->model('Model_product');
+
+        }
+
 	
 	
 	public function index()
 	{ 
-		$this->load->view("detailProduct");
+		$id_brg   = $this->input->post('id');
+		$data['produk'] = $this->Model_product->data_product($id_brg);
+		$this->load->view("detailProduct", $data);
 	}
 
-	public function details()
+	public function details($id)
 	{
-		$this->load->view("detailProduct");
+		// $id_brg   = $this->input->post('id');
+		$data['produk'] = $this->Model_product->data_product($id);
+		$this->load->view("detailProduct", $data);
 	}
+
+
 
 }

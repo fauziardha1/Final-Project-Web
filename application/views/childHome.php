@@ -5,7 +5,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('jaket-anak')?>">
-		      	<img src="<?php echo base_url()?>img/childFashion/1.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Anak/1.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -22,7 +22,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('celana-anak')?>">
-		      	<img src="<?php echo base_url()?>img/childFashion/2.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Anak/2.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -40,7 +40,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('topi-anak')?>">
-		      	<img src="<?php echo base_url()?>img/childFashion/4.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Anak/4.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -57,7 +57,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('sepatu-anak')?>">
-		      	<img src="<?php echo base_url()?>img/childFashion/3.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Anak/3.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -75,7 +75,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('jam-anak')?>">
-		      	<img src="<?php echo base_url()?>img/childFashion/6.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Anak/6.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
@@ -92,7 +92,7 @@
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
 		      <a href="<?php echo base_url('baju-anak')?>">
-		      	<img src="<?php echo base_url()?>img/childFashion/5.jpg" class="card-img" alt="...">
+		      	<img src="<?php echo base_url()?>img/Anak/5.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">

@@ -1,0 +1,15 @@
+#barang h5 {
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;	
+}
+
+#barang small {
+	display: block;
+	height: 100px;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
+}

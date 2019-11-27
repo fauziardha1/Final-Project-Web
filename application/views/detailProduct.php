@@ -27,10 +27,10 @@
   <div class="card-body">
 
   	<div class="detailProduct" style="display: none;" id="spesifikasiContent">
-		<h4>FS - NIKE Air Max 270 Running Shoes Men Sport Outdoor Sneakers [AH8050-002]</h4>
+		<h4><?php echo $produk->nama_brg ?></h4>
 		<br>
 
-		<h4>Spesifikasi Produk</h4>
+		<h3>Spesifikasi Produk</h3>
 		<table class="table table-hover">
 		  <tbody>
 		    <tr>
@@ -62,10 +62,10 @@
 	</div>
 
   	<div class="detailProduct" style="display: none;" id="deskripsiContent">
-		<h4>FS - NIKE Air Max 270 Running Shoes Men Sport Outdoor Sneakers [AH8050-002]</h4>
-		<p>NIKE Air Max 270 Running Shoes Men Sport Outdoor Sneakers [AH8050-002], fans of sneakers certainly agree, that Nike Air Max is arguably one of the most popular Nike series and is able to steal the attention of the public. Because the Air Max series is always eagerly awaited by consumers. Therefore, to complement the other Air Max series, the Nike manufacturer re-introduced the Sneaker Nike Air Max 270 which is designed sporty and looks stylish. In fact, the Nike Air Max 270 is also predicted as a sneaker that has a soft padding to provide maximum comfort while wearing it.</p>
+		<h4><?php echo $produk->nama_brg ?></h4><br>
+		<p><?php echo $produk->keterangan ?></p>
 
-		<h4>Size Chart (US) :</h4>
+		<h3>Size Chart (US) :</h3>
 		<ul>
 			<li>Size 6.5 (39)</li>
 			<p>Length: 24.5 cm</p>
@@ -78,12 +78,12 @@
 
     <div class="detailProduct" id="generalContent">
     	<h5 class="card-title text-center">
-	    	FS - NIKE Air Max 270 Running Shoes Men Sport Outdoor Sneakers [AH8050-002]
+	    	<?php echo $produk->nama_brg ?>
 		</h5>
     
  	  <div class="row">
 	    <div class="col" id="gambarProduk">
-	      	<img src="<?php echo base_url()?>img/menFashion/2.jpg" class="card-img mt-5" alt="...">
+	      	<img src="<?php echo base_url().'/img/'.$produk->kategori.'/'.$produk->sub_kategori .'/'.$produk->gambar ?>" class="card-img mt-5">
 	    </div>
 	    <div class="col">
 	      <div class="card-body">
@@ -93,7 +93,7 @@
 		      		<div><strong>Harga</strong></div>	
 		      	</div>
 		      	<div class="col-md-8">
-		      		<div>Rp 299.000,00</div>
+		      		<div>Rp <?php echo $produk->harga ?></div>
 		      	</div>
 		    </div>
 
@@ -141,10 +141,10 @@
 
 	        <div class="row" id="buy-or-addToCart">
 		      	<div class="col">
-		      		<a href="#" class="btn btn-primary">Buy Now!</a>	
+		      		<a href="<?php echo base_url()?>checkout/checkout/<?php echo $produk->id_brg ?>" class="btn btn-primary">Buy Now!</a>	
 		      	</div>
 		      	<div class="col">
-		      		<a href="#" class="btn btn-success">Add to Cart!</a>
+		      		<a href="<?php echo base_url()?>cart/cart/<?php echo $produk->id_brg ?>" class="btn btn-success">Add to Cart!</a>
 		      	</div>
 		    </div>
 	      

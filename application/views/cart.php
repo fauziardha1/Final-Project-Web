@@ -40,33 +40,33 @@
               <tbody>
                 <tr>
                   
+                
                   <th scope="row" class="border-0">
                     <div class="p-2">
                       <img src="https://res.cloudinary.com/mhmd/image/upload/v1556670479/product-1_zrifhn.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
                       <div class="ml-3 d-inline-block align-middle">
-                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Timex Unisex Originals</a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: Watches</span>
+                        <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle"><?php echo $produk->nama_brg ?></a></h5><span class="text-muted font-weight-normal font-italic d-block">Category: <?php echo $produk->sub_kategori ?></span>
                       </div>
                     </div>
                   </th>
-                  <td class="border-0 align-middle">$<strong id="productPrice">79.00</strong></td>
-
-                 <td class="border-0 align-middle" id="number">
+                  <td class="border-0 align-middle">Rp <?php echo $produk->harga ?></td>
+                  <td class="border-0 align-middle" id="number">
                       <span class="minus"> <strong class="v-middle">-</strong></span>
                         <input type="text" value="1"/>
                        <span class="plus">
                         <strong class="v-middle">+</strong>
                       </span>
                   </td>
-
                   <td class="border-0 align-middle">
                    <span class="spacer"></span>
-                    <strong class="v-middle" id="subTotal">0</strong>
+                   <strong class="v-middle" id="subTotal">0</strong>
                   </td>
-                  <td class="align-middle"><div class="cell p-ops">
-                  
-                  <a href="javascript:;" class="btn-2" clstag="pageclick|keycount|epi_cart_shoppinglist_delete_2016120713|6">Hapus</a>
-                </div>
+                  <td class="align-middle">
+                    <div class="cell p-ops">
+                      <a href="javascript:;" class="btn-2" clstag="pageclick|keycount|epi_cart_shoppinglist_delete_2016120713|6">Hapus</a>
+                    </div>
                   </td>
+               
 
                 </tr>
                 <tr>

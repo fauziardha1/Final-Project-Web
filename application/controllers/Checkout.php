@@ -7,6 +7,7 @@ class Checkout extends CI_Controller {
 	public function __construct()
     {
 		parent::__construct();
+		$this->load->model('Model_product');
 	}
 	
 	
@@ -16,10 +17,11 @@ class Checkout extends CI_Controller {
 		$this->load->view("checkout");
 	}
 
-	public function checkout()
+	public function checkout($id)
 	{
 		// $data['konten'] = 'cart';
-		$this->load->view("checkout");
+		$data['produk'] = $this->Model_product->data_product($id);
+		$this->load->view("checkout", $data);
 	}
 
 }
