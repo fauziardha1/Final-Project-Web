@@ -83,3 +83,4 @@ $route['home/child/jaket'] 			= 'kategori/jaket_anak';
 $route['home/child/topi'] 			= 'kategori/topi_anak';
 $route['home/child/sepatu'] 			= 'kategori/sepatu_anak';
 $route['home/child/jam'] 			= 'kategori/jam_anak';
+
