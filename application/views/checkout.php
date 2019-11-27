@@ -1,5 +1,8 @@
   <?php $this->load->view("partials/header.php") ?>
    <?php $this->load->view("partials/navbar.php") ?>
+   <a href="<?php echo base_url('success') ?>"  style="color: white;"></a>
+ 
+    
   <div class="row py-5 p-4 bg-white rounded shadow-sm  d-flex justify-content-center ">
         <div class=" card " style="width: 50%">
           
@@ -55,7 +58,18 @@
               <li class="d-flex justify-content-between py-3 border-bottom text-muted"><strong>Total</strong>
                 <h5 class="font-weight-bold">$400.00</h5>
               </li>
-            </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block text-uppercase ">beli</a>
+            </ul><button id="tombol"  class="btn btn-dark rounded-pill py-2 btn-block text-uppercase beli" >beli</button>
           </div>
         </div>
       </div>
+
+
+    
+      <script src="js/cart/checkout.js"></script>
+
+
+<script src="js/sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="<?php echo base_url('js/cart/cart.js')?>"></script>

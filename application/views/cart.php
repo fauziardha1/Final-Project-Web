@@ -135,7 +135,7 @@
                           
                         <div class="sum">
                            
-                           <button class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase"><a href="<?php echo base_url('checkout') ?>"  style="color: white; text-decoration: none;">Checkout</a></button>
+                           <button class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase" ><a href="<?php echo base_url('checkout') ?>"  style="color: white; text-decoration: none;">Checkout </a></button>
                          </div>
                         </div>
                     </div>

@@ -89,3 +89,5 @@ $route['jaket-anak'] 			= 'kategori/jaket_anak';
 $route['topi-anak'] 			= 'kategori/topi_anak';
 $route['sepatu-anak'] 			= 'kategori/sepatu_anak';
 $route['jam-anak'] 			= 'kategori/jam_anak';
+$route['checkout'] 					= 'checkout';
+$route['success'] 					= 'success';
