@@ -7,12 +7,12 @@ class Model_product extends CI_Model{
 		return $this->db->get_where("tb_barang", ['id_brg' => $id])->row();
 	}
 
-    public function add_product($data)
-    {
-        $this->db->insert('tb_barang',$data);
+    // public function add_product($data)
+    // {
+    //     $this->db->insert('tb_barang',$data);
 
-        return $this->db->affected_rows('tb_barang');
-    }
+    //     return $this->db->affected_rows('tb_barang');
+    // }
 
 }
 

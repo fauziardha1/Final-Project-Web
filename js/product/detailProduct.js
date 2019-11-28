@@ -43,3 +43,11 @@ spesifikasiProduct.addEventListener('click', function(){
   	generalProduct.className = generalProduct.className.replace("active", "");
 
 	});
+
+const ukuranProduk = document.querySelectorAll(".ukuranProduk div");
+for (var i = ukuranProduk.length - 1; i >= 0; i--) {
+  ukuranProduk[i].addEventListener('click', function() {
+    ukuranProduk[i].style.backgroundColor = '#18ab27';
+    ukuranProduk[i].style.color = 'white';
+  });
+}

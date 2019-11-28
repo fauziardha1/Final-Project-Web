@@ -61,7 +61,7 @@
                   </td>
                   <td class="border-0 align-middle">
                    <span class="spacer"></span>
-                   <strong class="v-middle">Rp <i class="subTotal"><?php echo ($produk->harga)?></i></strong>
+                   <strong class="v-middle">Rp <i class="subTotal"><?php echo $produk->harga; ?></i></strong>
                   </td>
                   <td class="align-middle">
                     <div class="cell p-ops">

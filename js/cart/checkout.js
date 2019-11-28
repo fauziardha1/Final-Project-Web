@@ -1,6 +1,6 @@
 const tombol =document.querySelector('#tombol');
 tombol.addEventListener('click', function(){
- const href =$(this).attr('href');
+
 
 let timerInterval
 Swal.fire({
@@ -36,11 +36,6 @@ Swal.fire({
             /* Read more about handling dismissals below */
             result.dismiss === Swal.DismissReason.timer
           ) {
-
-
-            document.location.href = href;
-
-
 
           }
           else{

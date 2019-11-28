@@ -8,6 +8,7 @@ class Checkout extends CI_Controller {
     {
 		parent::__construct();
 		$this->load->model('Model_cart');
+		$this->load->model('Model_product');
 	}
 	
 	
@@ -20,8 +21,8 @@ class Checkout extends CI_Controller {
 	public function checkout($id)
 	{
 		// $data['konten'] = 'cart';
-		$data['produk'] = $this->Model_product->data_product($id);
-		$this->load->view("checkout", $data);
+		$data['produk'] = $this->Model_product->get_product($id);
+		$this->load->view("singleCheckout", $data);
 	}
 
 }

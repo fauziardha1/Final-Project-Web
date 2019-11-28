@@ -14,6 +14,8 @@ class Product extends CI_Controller {
 	
 	public function index()
 	{ 
+		// gk jadi dipakai karena ini memanfaatkan form
+		// sehingga ketika halaman di muat ulang ada alert "ya gitu"
 		$id_brg   = $this->input->post('id');
 		$data['produk'] = $this->Model_product->get_product($id_brg);
 		$this->load->view("detailProduct", $data);
@@ -21,7 +23,7 @@ class Product extends CI_Controller {
 
 	public function details($id)
 	{
-		// $id_brg   = $this->input->post('id');
+		// memanfaatkan segment, jadi id produk ditangkap dilempar jadi url
 		$data['produk'] = $this->Model_product->get_product($id);
 		$this->load->view("detailProduct", $data);
 	}

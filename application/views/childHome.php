@@ -4,13 +4,13 @@
 		<div class="card mb-3 mr-3" style="max-width: 540px;">
 		  <div class="row no-gutters">
 		    <div class="col-md-4">
-		      <a href="<?php echo base_url('hhome/child/jaket')?>">
+		      <a href="<?php echo base_url('home/child/jaket')?>">
 		      	<img src="<?php echo base_url()?>img/Anak/1.jpg" class="card-img" alt="...">
 		      </a>
 		    </div>
 		    <div class="col-md-8">
 		      <div class="card-body">
-		        <a href="<?php echo base_url('hhome/child/jaket')?>"><h5 class="card-title">Jaket</h5></a>
+		        <a href="<?php echo base_url('home/child/jaket')?>"><h5 class="card-title">Jaket</h5></a>
 		        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 		        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		      </div>

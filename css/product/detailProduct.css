@@ -8,13 +8,13 @@
 	max-height: 700px;
 }
 
-#ukuranSepatu div {
+#ukuranProduk div {
 	float: left;
 	margin: 5px;
 	cursor: pointer;
 }
 
-#ukuranSepatu div:hover {
+#ukuranProduk div:hover {
 	background-color: #18ab27;
 	color: white;
 }

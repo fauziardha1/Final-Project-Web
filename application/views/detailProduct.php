@@ -120,7 +120,7 @@
 		      	<div class="col-md-4">
 		      		<div><strong>Ukuran</strong></div>	
 		      	</div>
-		      	<div class="col-md-8" id="ukuranSepatu">
+		      	<div class="col-md-8" id="ukuranProduk">
 		      		<div class="card p-3">38</div>
 		      		<div class="card p-3">39</div>
 		      		<div class="card p-3">40</div>
