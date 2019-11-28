@@ -8,7 +8,7 @@
 
 
 <div>
-	<?php $this->load->view("partials/navbar.php") ?>	
+	<?php $this->load->view("partials/navbar.php", $sumCart) ?>	
 </div>
 <p></p>
 <div class="container">

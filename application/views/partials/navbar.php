@@ -6,7 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item <?php echo $this->uri->segment(2) == '' ? 'active' : '' ?> <?php echo $this->uri->segment(2) == 'women' ? 'active' : '' ?>" >
+      <li class="nav-item <?php echo $this->uri->segment(2) == 'women' ? 'active' : '' ?>" >
         <a class="nav-link" href="<?php echo base_url('home/women') ?>">Wanita <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item <?php echo $this->uri->segment(2) == 'man' ? 'active' : '' ?>">
@@ -32,7 +32,7 @@
         <img  src="<?php echo base_url()?>img/cart/bag.png"> 
         <span class="sr-only">(current)</span>
         <i class="fas fa-bell fa-fw"></i>
-        <span class="badge badge-danger">21</span>
+        <span class="badge badge-danger"><?php echo $sumCart ?></span>
       </a>
       </li>
     </ul>
