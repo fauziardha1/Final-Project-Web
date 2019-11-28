@@ -28,7 +28,7 @@
 
     <ul class="form-inline my-2 my-lg-0 mr-3" >
      <li class="nav-item active">
-      <a class="nav-li\nk" href="<?php echo base_url('cart') ?>">
+      <a class="nav-link" href="<?php if($this->session->userdata('islogin') !== true){ echo base_url('login'); } else { echo base_url('cart'); } ?>">
         <img  src="<?php echo base_url()?>img/cart/bag.png"> 
         <span class="sr-only">(current)</span>
         <i class="fas fa-bell fa-fw"></i>
