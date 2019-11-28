@@ -36,6 +36,19 @@
                 
             }
         }
+
+        public function logout()
+        {
+            
+            unset(
+                $_SESSION['islogin'],
+                $_SESSION['username']
+            );
+            
+            
+            redirect(base_url('home'),'refresh');
+            
+        }
         
     }
 ?>

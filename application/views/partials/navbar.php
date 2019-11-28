@@ -43,10 +43,26 @@
     </form>
 
     <?php if (isset($this->session->userdata)) :?>
-      <a class="nav-link " href="#" id="userDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
-        <span class="mr-2 d-none font-weight-bold d-lg-inline text-white small"><?= $this->session->userdata('username'); ?></span>
-        <img class="img-profile rounded-circle  " width="40" height="40" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-      </a>
+
+      <?php if($this->session->userdata('islogin') === true) : ?>
+       <!-- coba -->
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle font-weight-bold text-white" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <?= $this->session->userdata('username'); ?>
+          <img class="img-profile rounded-circle  " width="40" height="40" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<?php echo base_url('Login/logout') ?>">Logout</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="<?php echo base_url('') ?>">Stay Here!</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <!-- akhir coba -->
+      <?php else : ?>
+        <button class="btn btn-outline-success my-2 my-sm-0 ml-3"><a href="<?php echo base_url('login') ?>"  style="color: white; text-decoration: none;">Masuk</a></button>
+      <?php endif ?>
+
     <?php else : ?>
     <button class="btn btn-outline-success my-2 my-sm-0 ml-3"><a href="<?php echo base_url('login') ?>"  style="color: white; text-decoration: none;">Masuk</a></button>
     
