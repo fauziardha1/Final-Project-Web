@@ -12,6 +12,7 @@ class home extends CI_Controller {
 	
 	public function index()
 	{ 
+		
 		$data['konten'] = 'womenHome';
 		$this->load->view("home", $data);
 	}

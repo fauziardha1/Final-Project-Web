@@ -41,7 +41,16 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+
+    <?php if (isset($this->session->userdata)) :?>
+      <a class="nav-link " href="#" id="userDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+        <span class="mr-2 d-none font-weight-bold d-lg-inline text-white small"><?= $this->session->userdata('username'); ?></span>
+        <img class="img-profile rounded-circle  " width="40" height="40" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+      </a>
+    <?php else : ?>
     <button class="btn btn-outline-success my-2 my-sm-0 ml-3"><a href="<?php echo base_url('login') ?>"  style="color: white; text-decoration: none;">Masuk</a></button>
     
+    <?php endif ?>
+
   </div>
 </nav>
