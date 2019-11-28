@@ -26,8 +26,8 @@
                     'username' => $username
                 );
                 $this->session->set_userdata( $array );
-
-                redirect(base_url('admin'));
+                
+                redirect(base_url('home'));
                 
                 
             } else {
