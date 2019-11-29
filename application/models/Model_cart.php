@@ -45,7 +45,11 @@ class Model_cart extends CI_Model{
     	$this->db->query($query);
     }
 
-
+    public function delete_all_product()
+    {
+    	$query = "DELETE FROM carts";
+    	$this->db->query($query);
+    }
 }
 
 

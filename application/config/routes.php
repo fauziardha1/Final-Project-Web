@@ -61,6 +61,7 @@ $route['under-maintenance'] 	= 'home/underMaintenance';
 $route['detail-product'] 		= 'product';
 
 $route['admin'] 				= 'admin';
+$route['home/women']	 		= 'cart/beli';
 
 
 $route['home/man/baju'] 			= 'kategori/baju_pria';

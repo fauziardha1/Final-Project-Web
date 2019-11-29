@@ -36,6 +36,15 @@ class Cart extends CI_Controller {
 		$this->load->view("cart", $data);
 	}
 
+	public function beli()
+	{
+		$this->Model_cart->delete_all_product();
+		
+		$data['sumCart'] = $this->sumCart();
+		$data['konten'] = 'womenHome';
+		$this->load->view("home", $data);
+	}
+
 	public function sumCart()
 	{
 
