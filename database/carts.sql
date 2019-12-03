@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2019 at 11:30 AM
+-- Generation Time: Dec 03, 2019 at 12:35 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.8
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `carts` (
   `id_cart` int(11) NOT NULL,
+  `id_user` varchar(50) NOT NULL,
   `id_brg` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -37,11 +38,11 @@ CREATE TABLE `carts` (
 -- Dumping data for table `carts`
 --
 
-INSERT INTO `carts` (`id_cart`, `id_brg`) VALUES
-(42, 3),
-(46, 15),
-(47, 27),
-(48, 32);
+INSERT INTO `carts` (`id_cart`, `id_user`, `id_brg`) VALUES
+(23, 'marrosandy.bagus.s', 10),
+(24, 'admin', 23),
+(25, 'admin', 5),
+(26, 'user', 9);
 
 --
 -- Indexes for dumped tables
@@ -61,7 +62,7 @@ ALTER TABLE `carts`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
