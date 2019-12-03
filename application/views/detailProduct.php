@@ -121,12 +121,12 @@
 		      		<div><strong>Ukuran</strong></div>	
 		      	</div>
 		      	<div class="col-md-8" id="ukuranProduk">
-		      		<div class="card p-3">38</div>
-		      		<div class="card p-3">39</div>
-		      		<div class="card p-3">40</div>
-		      		<div class="card p-3">41</div>
-		      		<div class="card p-3">42</div>
-		      		<div class="card p-3">43</div>		      		
+		      		<div class="card p-3 ukuranProduk" id="size38">38</div>
+		      		<div class="card p-3 ukuranProduk" id="size39">39</div>
+		      		<div class="card p-3 ukuranProduk" id="size40">40</div>
+		      		<div class="card p-3 ukuranProduk" id="size41">41</div>
+		      		<div class="card p-3 ukuranProduk" id="size42">42</div>
+		      		<div class="card p-3 ukuranProduk" id="size43">43</div>		      		
 		      	</div>
 		    </div>
 
@@ -141,10 +141,20 @@
 
 	        <div class="row" id="buy-or-addToCart">
 		      	<div class="col">
-		      		<a href="<?php echo base_url()?>checkout/checkout/<?php echo $produk->id_brg ?>" class="btn btn-primary">Buy Now!</a>	
+		      		<a href="<?php if($this->session->userdata('islogin') !== true) : ?>
+		      					<?php echo base_url('login'); ?>
+		      				<?php else: ?>
+		      					<?php echo base_url('checkout/checkout/') ?><?= $produk->id_brg ?>
+		      				<?php endif ?>" 
+		      			class="btn btn-primary">Buy Now!</a>	
 		      	</div>
 		      	<div class="col">
-		      		<a href="<?php echo base_url()?>cart/cart/<?php echo $produk->id_brg ?>" class="btn btn-success">Add to Cart!</a>
+		      		<a href="<?php if($this->session->userdata('islogin') !== true) : ?>
+		      					<?php echo base_url('login'); ?>
+		      				<?php else: ?>
+		      					<?php echo base_url('cart/cart/') ?><?= $produk->id_brg ?>
+		      				<?php endif ?>" 
+		      			class="btn btn-success">Add to Cart!</a>
 		      	</div>
 		    </div>
 	      

@@ -12,15 +12,17 @@ class Cart extends CI_Controller {
 	
 	
 	public function index()
-	{ 
+	{
+
 		$data['sumCart'] = $this->sumCart();
 		$data['products'] = $this->Model_cart->get_products();
 		$this->load->view("cart", $data);
 	}
 
-	public function cart($id)
+	public function cart($id_brg)
 	{
-		$this->Model_cart->add_product($id);
+		$id_user = $this->session->userdata('username');
+		$this->Model_cart->add_product($id_user, $id_brg);
 
 		$data['sumCart'] = $this->sumCart();
 		$data['products'] = $this->Model_cart->get_products();

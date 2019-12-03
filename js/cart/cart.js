@@ -1,4 +1,5 @@
 $(document).ready(function() {
+		console.log("hello");
 			$('.minus').click(function () {
 				var $input = $(this).parent().find('input');
 				var count = parseInt($input.val()) - 1;
@@ -10,19 +11,7 @@ $(document).ready(function() {
 			$('.plus').click(function () {
 				var $input = $(this).parent().find('input');
 				$input.val(parseInt($input.val()) + 1);
-				$input.change();
 				return false;
 			});
 		});
-
-
-const hargaBarang = document.getElementsByClassName('hargaBarang');
-const banyakBarang = document.getElementsByClassName('banyakBarang');
-const subTotal = document.getElementsByClassName('subTotal');
-const totalBayar = document.getElementsByClassName('totalBayar');
-
-for ( let i = 0; i < banyakBarang.length; i++) {
-	subTotal[i].innerText = hargaBarang[i].innerText*banyakBarang[i].innerText;
-	console.log(subTotal[i].innerText);
-}
 

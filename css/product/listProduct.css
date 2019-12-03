@@ -1,4 +1,8 @@
-#barang h5 {
+#barang img {
+	height: 300px;
+}
+
+#barang div h5 {
 	display: block;
 	height: 40px;
 	overflow: hidden;
@@ -6,10 +10,11 @@
 	text-overflow: ellipsis;	
 }
 
-#barang small {
+#barang div small {
 	display: block;
 	height: 100px;
 	overflow: hidden;
 	/*white-space: nowrap;*/
 	text-overflow: ellipsis;
 }
+

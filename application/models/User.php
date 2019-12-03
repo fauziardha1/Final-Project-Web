@@ -17,5 +17,6 @@
 
             return $this->db->affected_rows('user');
         }
+
     }
 ?>

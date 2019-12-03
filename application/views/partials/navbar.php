@@ -32,7 +32,7 @@
         <img  src="<?php echo base_url()?>img/cart/bag.png"> 
         <span class="sr-only">(current)</span>
         <i class="fas fa-bell fa-fw"></i>
-        <span class="badge badge-danger"><?php echo $sumCart ?></span>
+        <span class="badge badge-danger"><?php if($this->session->userdata('islogin') == true) { echo $sumCart; } ?></span>
       </a>
       </li>
     </ul>
@@ -46,16 +46,15 @@
 
       <?php if($this->session->userdata('islogin') === true) : ?>
        <!-- coba -->
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle font-weight-bold text-white" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown">
+        <a class="dropdown-toggle font-weight-bold text-white" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration: none;">
           <?= $this->session->userdata('username'); ?>
           <img class="img-profile rounded-circle  " width="40" height="40" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?php echo base_url('Login/logout') ?>">Logout</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo base_url('') ?>">Stay Here!</a>
-          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="<?php echo base_url('') ?>">Home</a>
         </div>
       </li>
       <!-- akhir coba -->
