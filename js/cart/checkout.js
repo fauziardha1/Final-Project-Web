@@ -8,7 +8,7 @@ let timerInterval
 Swal.fire({
   title: 'Tunggu Sebentar',
   html: 'Pesanan Anda Sedang di Proses',
-  timer: 2000,
+  timer: 5000,
   timerProgressBar: true,
   onBeforeOpen: () => {
     Swal.showLoading()

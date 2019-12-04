@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2019 at 12:35 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.8
+-- Waktu pembuatan: 04 Des 2019 pada 17.34
+-- Versi server: 10.4.8-MariaDB
+-- Versi PHP: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,44 +25,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `carts`
+-- Struktur dari tabel `carts`
 --
 
 CREATE TABLE `carts` (
   `id_cart` int(11) NOT NULL,
   `id_user` varchar(50) NOT NULL,
-  `id_brg` int(11) NOT NULL
+  `id_brg` int(11) NOT NULL,
+  `byk_brg` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `carts`
+-- Dumping data untuk tabel `carts`
 --
 
-INSERT INTO `carts` (`id_cart`, `id_user`, `id_brg`) VALUES
-(23, 'marrosandy.bagus.s', 10),
-(24, 'admin', 23),
-(25, 'admin', 5),
-(26, 'user', 9);
+INSERT INTO `carts` (`id_cart`, `id_user`, `id_brg`, `byk_brg`) VALUES
+(23, 'marrosandy.bagus.s', 10, 7),
+(24, 'admin', 23, 1),
+(25, 'admin', 5, 5),
+(40, 'user', 17, 1);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `carts`
+-- Indeks untuk tabel `carts`
 --
 ALTER TABLE `carts`
   ADD PRIMARY KEY (`id_cart`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `carts`
+-- AUTO_INCREMENT untuk tabel `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
