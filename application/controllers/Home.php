@@ -73,7 +73,7 @@ class home extends CI_Controller {
 	public function about()
 	{
 		$data['sumCart'] = $this->sumCart();
-		$data['konten'] = 'about';
+		// $data['konten'] = 'about';
 		$this->load->view("about", $data);
 	}
 
