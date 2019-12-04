@@ -70,4 +70,11 @@ class home extends CI_Controller {
 		return $sumCart;
 	}
 
+	public function about()
+	{
+		$data['sumCart'] = $this->sumCart();
+		$data['konten'] = 'about';
+		$this->load->view("about", $data);
+	}
+
 }

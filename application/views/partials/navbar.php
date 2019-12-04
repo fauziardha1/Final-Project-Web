@@ -24,6 +24,9 @@
           <a class="dropdown-item" href="<?php echo base_url('under-maintenance') ?>">> 15 tahun</a>
         </div>
       </li>
+      <li class="nav-item <?php echo $this->uri->segment(2) == 'about' ? 'active' : '' ?>">
+        <a class="nav-link" href="<?php echo base_url('home/about') ?>">About</a>
+      </li>
     </ul>
 
     <ul class="form-inline my-2 my-lg-0 mr-3" >
