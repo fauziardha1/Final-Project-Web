@@ -13,8 +13,8 @@
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Women's Fshion</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Women's Fashion</h5>
+            <p><em>Trend Fashion</em> Wanita masa kini</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -22,8 +22,8 @@
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5 >Men's Fshion</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5 >Men's Fashion</h5>
+            <p>Menunjang penampilan pria dalam berbagai keadaan</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -32,7 +32,7 @@
           </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Berbagai jenis <em>Fashion</em> yang cocok untuk anak</p>
           </div>
         </div>
   
@@ -42,8 +42,8 @@
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Women's Fshion</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Women's Fashion</h5>
+            <p><em>Trend Fashion</em> Wanita masa kini</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -51,8 +51,8 @@
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5 >Men's Fshion</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5 >Men's Fashion</h5>
+            <p>Menunjang penampilan pria dalam berbagai keadaan</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -60,7 +60,7 @@
             <img src="<?php echo base_url()?>img/4.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Berbagai jenis <em>Fashion</em> yang cocok untuk anak</p>
           </div>
         </div>  
 
@@ -70,8 +70,8 @@
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Women's Fshion</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Women's Fashion</h5>
+            <p><em>Trend Fashion</em> Wanita masa kini</p>
           </div>
         </div>
         <div class="carousel-item active">
@@ -79,8 +79,8 @@
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5 >Men's Fshion</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5 >Men's Fashion</h5>
+            <p>Menunjang penampilan pria dalam berbagai keadaan</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -89,7 +89,7 @@
           </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Berbagai jenis <em>Fashion</em> yang cocok untuk anak</p>
           </div>
         </div>
 
@@ -99,8 +99,8 @@
             <img src="<?php echo base_url()?>img/2.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Women's Fshion</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Women's Fashion</h5>
+            <p><em>Trend Fashion</em> Wanita masa kini</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -108,8 +108,8 @@
             <img src="<?php echo base_url()?>img/1.jpg" class="d-block mx-auto mt-2" style="border-radius: 50px;" width="90%" height="500px" alt="...">
           </a>
           <div class="carousel-caption d-none d-md-block">
-            <h5 >Men's Fshion</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5 >Men's Fashion</h5>
+            <p>Menunjang penampilan pria dalam berbagai keadaan</p>
           </div>
         </div>
         <div class="carousel-item active">
@@ -118,7 +118,7 @@
           </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Child's Fashion</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Berbagai jenis <em>Fashion</em> yang cocok untuk anak</p>
           </div>
         </div> 
       <?php endif; ?>

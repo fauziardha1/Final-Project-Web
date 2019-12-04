@@ -8,7 +8,7 @@
 	<?php $this->load->view("partials/navbar.php", $sumCart) ?>	
 	<div class = "container" id = "about" >
 		<h2 class="mt-5 mb-4" style="text-align: center;">About this website</h2>
-		<p>Website <b><em>FashionID</em></b> merupakan sebuah website toko pakaian yang melayani pembelian berbagai jenis pakaian. Website ini terinspirasi dari salah satu website pakaian yang terkenal, yaitu <a href='http://zalora.co.id'>zalora.co.id</a> dan gambar-gambar yang ada di website ini sebagian besar berasal dari <a href='http://blibli.com'>blibli.com</a>. Pada webite ini, terdapat pakaian untuk pria, wanita, maupun anak-anak. Website ini menyadiakan berbagai jenis <em>Fashion</em> hits masa kini mulai dari baju, celana, jaket, topi, sepatu, dan jam tangan. </p> 
+		<p>Website <b><em>FashionID</em></b> merupakan sebuah website toko pakaian yang melayani pembelian berbagai jenis pakaian. Website ini terinspirasi dari salah satu website pakaian yang terkenal, yaitu <a href='http://zalora.co.id' target="_blank">zalora.co.id</a> dan gambar-gambar yang ada di website ini sebagian besar berasal dari <a href='http://blibli.com' target="_blank">blibli.com</a>. Pada webite ini, terdapat pakaian untuk pria, wanita, maupun anak-anak. Website ini menyadiakan berbagai jenis <em>Fashion</em> hits masa kini mulai dari baju, celana, jaket, topi, sepatu, dan jam tangan. </p> 
 		<br>
 		<h2 class="mt-5 mb-4" style="text-align: center;">Developer</h2>
 		<div class="row">
