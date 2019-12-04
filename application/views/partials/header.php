@@ -6,4 +6,9 @@
 <meta name="description" content="Toko Pakaian Online">
 <meta name="author" content="Fauzi Arda Saputra - Nurul Afifah - Marrosandy Bagus Saputra - Dheny Dwi Prakoso">
 
+<!-- Ajax -->
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <title><?php echo ucfirst($this->uri->segment(2)) ." - ". SITE_NAME?></title>

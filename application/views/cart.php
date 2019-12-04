@@ -36,9 +36,9 @@
                 </tr>
               </thead>
               <tbody>
-                <?php $jumlahBarang = 0; ?>
+                <?php $jumlahBarang = 0; $totalBayar = 0;?>
                 <?php foreach ($products as $produk) : ?>
-                  <?php $jumlahBarang = $jumlahBarang+1; ?>
+                  <?php $jumlahBarang = $jumlahBarang+1; $totalBayar = $totalBayar+$produk->harga;?>
                 <tr>
                   <th scope="row" class="border-0">
                     <div class="p-2">
@@ -53,15 +53,15 @@
                   </th>
                   <td class="border-0 align-middle">Rp <i class="hargaBarang"><?php echo $produk->harga ?></i></td>
                   <td class="border-0 align-middle" id="number">
-                      <span class="minus"> <strong class="v-middle">-</strong></span>
-                        <input type="number" value="1" class="banyakBarang" />
-                       <span class="plus">
+                      <span class="minus kurang"> <strong class="v-middle">-</strong></span>
+                        <input type="number" value="1" class="banyakBarang" disabled="" />
+                       <span class="plus tambah">
                         <strong class="v-middle">+</strong>
                       </span>
                   </td>
                   <td class="border-0 align-middle">
                    <span class="spacer"></span>
-                   <strong class="v-middle">Rp <?php echo $produk->harga; ?></strong>
+                   <strong class="v-middle">Rp <i class="subTotal"><?php echo $produk->harga ?></i></strong>
                   </td>
                   <td class="align-middle">
                     <div class="cell p-ops">
@@ -75,11 +75,11 @@
                   <div class="checkout">
                     
                         <div class="printTot"> <em>Total(<?php echo $jumlahBarang; ?>&nbsp;pieces)</em> </div>
-                        <div class="sum"> <strong>Rp <i class="totalBayar">51800</i></strong> </div>
+                        <div class="sum"> <strong>Rp <i id="totalBayar"><?= $totalBayar ?></i></strong> </div>
                           
                         <div class="sum">
-                           
-                           <button class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase" ><a href="<?php echo base_url('checkout') ?>"  style="color: white; text-decoration: none;"> Checkout</a></button>
+                           <?php ?>
+                           <button class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase" ><a href="<?php if($sumCart == 0) {echo "";} else {echo base_url('checkout');} ?>"  style="color: white; text-decoration: none;"> Checkout</a></button>
                          </div>
                         </div>
                     </div>
@@ -91,6 +91,7 @@
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="<?php echo base_url('js/cart/cart.js')?>"></script>
+      <script src="<?php echo base_url('js/cart/cart2.js')?>"></script>
 
 
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
