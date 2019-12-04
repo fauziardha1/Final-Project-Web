@@ -1,5 +1,7 @@
 const tombol =document.querySelector('#tombol');
 tombol.addEventListener('click', function(){
+    e.preventDefault();
+    const href = $(this).attr('href');
 
 
 let timerInterval
@@ -24,18 +26,8 @@ Swal.fire({
     result.dismiss === Swal.DismissReason.timer
   ) {
     
-      Swal.fire({
      
-      icon: 'success',
-       title: 'Pesanan Anda Berhasil',
-      showConfirmButton: false,
-      timer: 1500
-     
-        }).then((result) => {
-          if (
-            /* Read more about handling dismissals below */
-            result.dismiss === Swal.DismissReason.timer
-          ) {
+            document.location.href = href;
 
           }
           else{
@@ -48,5 +40,3 @@ Swal.fire({
           }
 })
   }
-});
-});
