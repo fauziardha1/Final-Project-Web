@@ -15,7 +15,6 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
-
           <!-- Shopping cart table -->
           <div class="table-responsive">
             <table class="table">
@@ -37,6 +36,8 @@
               </thead>
               <tbody>
                 <?php $jumlahBarang = 0; $totalBayar = 0;?>
+                <form action="<?php if($sumCart == 0) {echo "";} else {echo base_url('checkout');} ?>" method="post">
+
                 <?php foreach ($products as $produk) : ?>
                   <?php $jumlahBarang = $jumlahBarang+1; $totalBayar = $totalBayar+$produk->harga;?>
                 <tr>
@@ -54,11 +55,12 @@
                   <td class="border-0 align-middle">Rp <i class="hargaBarang"><?php echo $produk->harga ?></i></td>
                   <td class="border-0 align-middle" id="number">
                       <span class="minus kurang"> <strong class="v-middle">-</strong></span>
-                        <input type="number" value="1" class="banyakBarang" disabled="" />
+                        <input type="number"  name="banyakBarang[]" value="1" class="banyakBarang"  />
                        <span class="plus tambah">
                         <strong class="v-middle">+</strong>
                       </span>
                   </td>
+                  <input type="hidden" name="idBarang[]" value="<?= $produk->id_brg; ?>">
                   <td class="border-0 align-middle">
                    <span class="spacer"></span>
                    <strong class="v-middle">Rp <i class="subTotal"><?php echo $produk->harga ?></i></strong>
@@ -72,19 +74,27 @@
                 <?php endforeach; ?>
               </tbody> 
             </table>
+            <!-- <?php  
+                                // $dom = new DOMDocument();
+                                //  $dom->loadHTML('./cart.php');
+                                //  $data = $dom->getElementsByTagName('input')->length;
+                                //  var_dump($data);die();
+                            ?> -->
                   <div class="checkout">
                     
                         <div class="printTot"> <em>Total(<?php echo $jumlahBarang; ?>&nbsp;pieces)</em> </div>
                         <div class="sum"> <strong>Rp <i id="totalBayar"><?= $totalBayar ?></i></strong> </div>
                           
                         <div class="sum">
-                           <?php ?>
-                           <button class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase" ><a href="<?php if($sumCart == 0) {echo "";} else {echo base_url('checkout');} ?>"  style="color: white; text-decoration: none;"> Checkout</a></button>
+                           <button type="submit" class="btn btn-lg btn-block btn-sm btn btn-dark text-uppercase" ><a   style="color: white; text-decoration: none;"> Checkout</a></button>
                          </div>
                         </div>
                     </div>
                   </div>
+                  
           </div>
+          </form> 
+          <!-- akhir form -->
           <!-- End -->
         </div>
       </div>
@@ -100,3 +110,4 @@
 
 </body>
 </html>
+

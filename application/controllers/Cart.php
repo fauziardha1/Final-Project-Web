@@ -22,7 +22,7 @@ class Cart extends CI_Controller {
 	public function cart($id_brg)
 	{
 		$id_user = $this->session->userdata('username');
-		$this->Model_cart->add_product($id_user, $id_brg);
+		$this->Model_cart->add_product($id_user, $id_brg,$byk_brg=1);
 
 		$data['sumCart'] = $this->sumCart();
 		$data['products'] = $this->Model_cart->get_products();

@@ -27,7 +27,7 @@ class Model_cart extends CI_Model{
 		return $cartProducts;
 	}
 
-    public function add_product($id_user, $id_brg)
+    public function add_product($id_user, $id_brg,$byk_brg=1)
     {
     	// Ambil semua di table cart
     	$cartQuery = "SELECT * FROM carts";
@@ -44,7 +44,7 @@ class Model_cart extends CI_Model{
 		// jika belum maka ditambahkan ke cart
     	if(!$udahAda){
 
-    		$query = "INSERT INTO carts (id_user, id_brg) VALUES ('$id_user', $id_brg)";
+    		$query = "INSERT INTO carts (id_user, id_brg,byk_brg) VALUES ('$id_user', $id_brg,$byk_brg)";
         	$this->db->query($query);
     	}
     }
@@ -60,7 +60,39 @@ class Model_cart extends CI_Model{
     	$id_user = $this->session->userdata('username');
     	$query = "DELETE FROM carts WHERE id_user = '$id_user'";
     	$this->db->query($query);
-    }
+	}
+	
+	public function update_product_quantity($id,$quantity,$idUser)
+	{
+		// $byk = intval($quantity);
+		// $intId = intval($id);
+		// $this->db->where('id_brg',$intId);
+		
+
+		// $tempData = $this->db->get('carts')->result();
+		// var_dump($intId);die();
+		// $this->db->where('id_cart',$tempData['id_cart']);
+		// $data = array('id_user'=>$this->session->userdata('username'),
+		// 	'id_brg'=>$tempData['id_brg'],
+		// 	'byk_brg' => $byk,
+		// );
+		// $this->db->update('carts',$data);
+		// var_dump($this->db->get('carts')->row_array()); die();
+
+		// $this->db->set('byk_brg',$byk);
+		// $this->db->where('id_cart', $tempData['id_cart']);
+		// $this->db->update('carts');
+		// $idcart = $tempData['id_cart'];
+
+		// var_dump($idcart);die();
+
+		$updateQuery = "UPDATE carts SET byk_brg = $quantity WHERE id_brg = $id && id_user = '$idUser';";
+		$this->db->query($updateQuery);
+		// var_dump($id."--".$idUser."--".$quantity);die();
+
+		// echo $this->db->affected_rows(); die();
+		
+	}
 }
 
 

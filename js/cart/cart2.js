@@ -46,6 +46,6 @@ for (let i = 0; i < domPlus.length; i++) {
 			domTotalBayar.innerHTML = totalBayar - hargaBarang;
 		}
 
-		console.log(temp);	
+		// console.log(temp);	
 	});
 }
