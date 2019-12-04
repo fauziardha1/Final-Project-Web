@@ -9,13 +9,31 @@
   <div class="row py-5 p-4 bg-white rounded shadow-sm  d-flex justify-content-center ">
         <div class=" card " style="width: 50%">
           
-          <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold ">Alamat Penerima</div>
+           <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold ">Penerima</div>
           
-            <div class=" d-flex justify-content-center">
-            <textarea name="" cols="23" rows="2" class="form-control" style="width: 95%" required=""></textarea>
-            </div>
+          
+            <form class="px-4" method="POST" action="<?= base_url('checkout/invoice');?>">
 
-            <div class="bg-light rounded-pill px-4 py-3  ">Daftar belanja
+              <div class="d-flex justify-content-between py-3" >
+              <div class=" " style="width: 45% ">Nama:
+              
+                <input class="form-control" type="text" name="name" id="name" placeholder="Nama" required="">
+              </div>
+              <div class=" " style="width: 45% " >Nomor Telepon:
+                <input class="form-control" type="number"name="noHp" id="noHp" placeholder="No. Hp" required="" />
+              </div>
+              </div>
+
+              <div class=" " style="" >Alamat:
+                
+                <textarea name="alamatPenerima" id="address" cols="23" rows="2" class="form-control " placeholder="Alamat" required=""></textarea>
+
+              </div>
+            
+
+             <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold ">DAFTAR BELANJA</div>
+
+            <div class="bg-light rounded-pill px-4 ">
               <div class=" p-4 bg-white rounded shadow-sm  ">
                 
                 <?php foreach ($products as $produk) : ?>
@@ -66,7 +84,7 @@
                 <h5 class="font-weight-bold">$400.00</h5>
               </li>
             </ul>
-            <a href="<?= base_url('home/women') ?>"><button id="tombol" class="btn btn-dark rounded-pill py-2 btn-block text-uppercase beli" type="submit">beli</button></a>
+            <button id="tombol" class="btn btn-dark rounded-pill py-2 btn-block text-uppercase beli" type="submit">beli</button>
           </div>
         </div>
       </div>
