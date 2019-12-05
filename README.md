@@ -23,7 +23,7 @@ Terdapat 4 file database mySQL yang harus di-import jika ingin menjalankan websi
 -pesanan.sql
 -tb_barang.sql
 -user.sql
-File tersebut dapat ditemukan di foler Final-Project-Web/database
+File tersebut dapat ditemukan di folder Final-Project-Web/database
 
 Developer :
 -Fauzi Arda Saputra (105217001)
