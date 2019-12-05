@@ -19,6 +19,13 @@ Teknologi yang digunakan :
 -Bootstrap: Bootstrap 4 
 -XAMPP Control Panel V3.2.4 
 
+Terdapat 4 file database mySQL yang harus di-import jika ingin menjalankan website ini, yaitu :
+-carts.sql
+-pesanan.sql
+-tb_barang.sql
+-user.sql
+File tersebut dapat ditemukan di folder Final-Project-Web/database
+
 Developer :
 -Fauzi Arda Saputra (105217001)
 -Nurul Afifah (105217003)
