@@ -38,6 +38,10 @@
  
 </head>
 
+<div>
+    <?php $this->load->view("partials/navbar.php", $sumCart) ?> 
+</div>
+
 <body>
     <div class="invoice-box py-5">
         <table cellpadding="0" cellspacing="0">

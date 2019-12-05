@@ -6,7 +6,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item <?php echo $this->uri->segment(2) == 'women' ? 'active' : '' ?>" >
+      <li class="nav-item <?php echo $this->uri->segment(2) == 'women' ? 'active' : '' ?> <?php echo $this->uri->segment(1) == '' ? 'active' : '' ?>" >
         <a class="nav-link" href="<?php echo base_url('home/women') ?>">Wanita <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item <?php echo $this->uri->segment(2) == 'man' ? 'active' : '' ?>">
@@ -41,10 +41,9 @@
     </ul>
 
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search" name="search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
-
     <?php if (isset($this->session->userdata)) :?>
 
       <?php if($this->session->userdata('islogin') === true) : ?>

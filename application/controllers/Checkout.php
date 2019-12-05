@@ -63,12 +63,13 @@ class Checkout extends CI_Controller {
 
         $this->Model_invoice->add_pesanan($newPesanan);
 
+        $data['sumCart'] = $this->sumCart();
         $data['pesanan'] = $this->Model_invoice->get_product($no_telepon);
        	$data['products'] = $this->Model_cart->get_products();
 		//$this->load->view("invoice", $data);
 		$this->load->view("invoice", $data);
 
-
+		$this->Model_cart->delete_all_product();
 	}
 
 }
